@@ -23,7 +23,7 @@ Content:
 - **GPDMA** settings
 - Add needed **source code**
 
-In this repository you will find a complete working project tested on the **STM32H573I-DK** board. If you don't want to follow the tutorial, just download the repository, open and build the project.
+In this repository you will NOT find a complete working project tested on the **STM32H573I-DK** board, because sharing here complete TouchGFX project is against ST rules. 
 
 The **secure** application is located in **Flash Bank 1** (1MB) and basically performs only an initialization of GTZC or other initialization, then **jumps** to the **non secure** application. The **Non secure** application performs the remaining functionality and is located in **Flash Bank 2** (1MB).
 ```
