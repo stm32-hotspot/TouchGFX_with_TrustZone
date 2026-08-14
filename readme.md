@@ -128,7 +128,7 @@ When you run debug next time, be sure to select Secure project when launching de
 
 ## Add TouchGFX SW packgage X-CUBE-TouchGFX
 
-> Note: You can find this step described also at ST Community article [here](https://community.st.com/t5/stm32-mcus/assigning-touchgfx-to-a-nonsecure-trustzone-application-on-an/ta-p/851163)
+> Note: You can find this step described also in ST Community article [here](https://community.st.com/t5/stm32-mcus/assigning-touchgfx-to-a-nonsecure-trustzone-application-on-an/ta-p/851163)
 
 1) Open again **STM32CubeMX**.
 
