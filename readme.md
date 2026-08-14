@@ -23,7 +23,7 @@ Content:
 - **GPDMA** settings
 - Add needed **source code**
 
-In this repository you will NOT find a complete working project tested on the **STM32H573I-DK** board, because sharing here complete TouchGFX project is against ST rules. 
+> Note: In this repository you will NOT find a complete working project tested on the **STM32H573I-DK** board, because sharing here complete TouchGFX project is against ST rules. 
 
 The **secure** application is located in **Flash Bank 1** (1MB) and basically performs only an initialization of GTZC or other initialization, then **jumps** to the **non secure** application. The **Non secure** application performs the remaining functionality and is located in **Flash Bank 2** (1MB).
 ```
@@ -277,3 +277,7 @@ Build the application (Ctrl + B) in CubeIDE and launch debug or flash the applic
 
 ***Note:***
 > By default, STM32CubeMX allocates a large portion of SRAM for the **secure** application, which is unnecessary. The remaining available SRAM is allocated to the **non-secure** application. You can reduce the allocated SRAM for the **secure** application, allowing more SRAM to be allocated to the **non-secure** application. Adjust the linker file and the **Block-based memory protection controller** tab in STM32CubeMX under the **GTZC_S** section.
+
+---
+
+Related [ST Community article](https://community.st.com/stm32-mcus-60/create-and-debug-a-touchgfx-application-with-a-secure-and-nonsecure-project-setup-167084) which directs here.
